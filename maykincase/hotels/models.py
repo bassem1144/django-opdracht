@@ -6,5 +6,5 @@ class Hotel(models.Model):
     city = models.ForeignKey()
 
 class City(models.Model):
-    code = models.CharField(max_length=3)
+    code = models.CharField(max_length=3, primary_key=True)
     name = models.CharField(max_length=100)
